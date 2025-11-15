@@ -1,0 +1,24 @@
+[package]
+name = "gradebook-bin"
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+version.workspace = true
+
+[dependencies.eframe]
+version = "0.33"
+default-features = false
+features = [
+    "web_screen_reader",
+    "default_fonts",
+    "glow",
+    "persistence",
+    "wayland",
+]
+
+[dependencies]
+lib = { package = "gradebook-lib", path = "../lib" }
+log.workspace = true
+wasm-bindgen-futures.workspace = true
+web-sys.workspace = true
+serde.workspace = true

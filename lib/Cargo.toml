@@ -1,0 +1,12 @@
+[package]
+name = "gradebook-lib"
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+log.workspace = true
+wasm-bindgen-futures.workspace = true
+web-sys.workspace = true
+serde.workspace = true
